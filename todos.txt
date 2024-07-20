@@ -1,0 +1,14 @@
+{
+    "title" : "Todo app",
+    "description" : "Project setup and Models and Controllers to be created",
+    "priority" : "High"
+
+}
+
+{
+    "title" : "DevOps",
+    "description" : "Set up CICD pipeline",
+    "priority" : "Medium"
+
+}
+
