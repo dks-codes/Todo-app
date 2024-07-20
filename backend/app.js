@@ -5,6 +5,8 @@ import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
 import { indexRouter } from './routes/indexRouter.js';
 import { errorMiddleware } from './middlewares/errorMiddleware.js';
+import swaggerUi from 'swagger-ui-express';
+import { swaggerDocs } from './swaggerConfig.js';
 
 export const app = express();
 
@@ -18,6 +20,7 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 
 app.use("/api/v1", indexRouter);
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 app.use(errorMiddleware);
 
