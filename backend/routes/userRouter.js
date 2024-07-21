@@ -1,15 +1,15 @@
-import express from 'express';
-import { signup, login, logout } from '../controller/userController.js';
+import express from "express";
+import { signup, login, logout } from "../controller/userController.js";
 
 export const userRouter = express.Router();
-
 /**
  * @swagger
- * /api/v1/user/signup:
+ * /user/signup:
  *   post:
  *     summary: User Signup
  *     description: Registers a new user with a name, email, phone number, and password. The email and phone number must be unique.
  *     tags: [User]
+ *     security: []   
  *     requestBody:
  *       required: true
  *       content:
@@ -22,7 +22,7 @@ export const userRouter = express.Router();
  *               - phone
  *               - password
  *             properties:
- *               name: 
+ *               name:
  *                 type: string
  *                 description: Full name of the user
  *               email:
@@ -39,10 +39,10 @@ export const userRouter = express.Router();
  *               name: John Doe
  *               email: john.doe@example.com
  *               phone: +1234567890
- *               password: StrongP@ssw0rd      
+ *               password: StrongP@ssw0rd
  *     responses:
  *       201:
- *         decription: User registered successfully
+ *         description: User registered successfully
  *         content:
  *           application/json:
  *             schema:
@@ -58,7 +58,7 @@ export const userRouter = express.Router();
  *                   type: string
  *                   description: JWT token for the authenticated user
  *       400:
- *         description: Bad request due to validation errors or existing user
+ *         description: Bad request due to Existing user with same Email or Phone number
  *         content:
  *           application/json:
  *             schema:
@@ -84,16 +84,16 @@ export const userRouter = express.Router();
  *                   type: string
  *                   example: Internal Server Error!!
  */
-userRouter.post('/signup', signup);
-
+userRouter.post("/signup", signup);
 
 /**
  * @swagger
- * /api/v1/user/login:
+ * /user/login:
  *   post:
  *     summary: User Login
  *     description: Logs in a user with either an email or phone number and a password. Only one of email or phone is required.
  *     tags: [User]
+ *     security: []
  *     requestBody:
  *       required: true
  *       content:
@@ -115,7 +115,6 @@ userRouter.post('/signup', signup);
  *                 description: Password of the user.
  *             example:
  *               email: user@example.com
- *               password: MyP@ssw0rd
  *               # Or
  *               phone: +1234567890
  *               password: MyP@ssw0rd
@@ -149,7 +148,6 @@ userRouter.post('/signup', signup);
  *                 message:
  *                   type: string
  *                   example: Invalid Credentials!!
- * 
  *       500:
  *         description: Internal server error
  *         content:
@@ -164,20 +162,20 @@ userRouter.post('/signup', signup);
  *                   type: string
  *                   example: Internal Server Error!!
  */
-userRouter.post('/login', login);
+userRouter.post("/login", login);
 
 
-/** 
+/**
  * @swagger
- * /api/v1/user/logout:
+ * /user/logout:
  *   post:
  *     summary: User Logout
  *     description: Logs out a user by clearing the authentication cookie.
  *     tags: [User]
  *     responses:
  *       200:
- *          description: User Logged Out Successfully
- *          content:
+ *         description: User Logged Out Successfully
+ *         content:
  *           application/json:
  *             schema:
  *               type: object
@@ -202,4 +200,4 @@ userRouter.post('/login', login);
  *                   type: string
  *                   example: Error occurred while logging out
  */
-userRouter.post('/logout', logout);
+userRouter.post("/logout", logout);

@@ -1,6 +1,6 @@
 import swaggerJsDoc from 'swagger-jsdoc';
 
-const PORT = process.env.PORT || 4001
+const PORT = process.env.PORT || 4001;
 
 const swaggerOptions = {
   swaggerDefinition: {
@@ -13,8 +13,22 @@ const swaggerOptions = {
         name: 'Deepak Kumar Sahoo',
         email: 'deepakkumarsahoo2002@gmail.com',
       },
-      servers: [{ url: `http://localhost:${PORT}` }],
+      servers: [{ url: `http://localhost:${PORT}/api/v1` }],
     },
+    components: {
+      securitySchemes: {
+        BearerAuth: {
+          type: 'http',
+          scheme: 'bearer',
+          bearerFormat: 'JWT',
+        },
+      },
+    },
+    security: [
+      {
+        BearerAuth: [],
+      },
+    ],
   },
   apis: ['./routes/*.js'], // Paths to files containing OpenAPI definitions
 };
