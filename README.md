@@ -76,8 +76,6 @@ Make sure you have the following installed on your machine:
 
     Alternatively, you can also see the documentation at: http://localhost:`<YOUR FREE PORT>`/api-docs ( Eg: [http://localhost:4001/api-docs](http://localhost:4001/api-docs) )
 
-    Application Documentation : [https://documenter.getpostman.com/view/29101734/2sA3kUGN2V](https://documenter.getpostman.com/view/29101734/2sA3kUGN2V)
-
 ### Contributing
 
     You are welcomed to contribute to the Todo App API! To contribute, follow these steps:
