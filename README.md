@@ -39,31 +39,24 @@ Make sure you have the following installed on your machine:
 
    Create a .env file in the backend directory with the required environment variables:-
 
-   PORT = `<YOUR FREE PORT>`
-
-   MONGODB_URI = `<Your MongoDB URI Connection String>`
-
-   FRONTEND_URL = `<FRONTEND_URL>`
-
-   JWT_SECRET_KEY = `<Your SECRET KEY>`
-
-   JWT_EXPIRES = `<Days after which JWT expires>`d
-
-   COOKIE_EXPIRES = `<Days after which Cookie Expires>`
+    ```
+   PORT = <YOUR FREE PORT>
+   MONGODB_URI = <Your MongoDB URI Connection String>
+   FRONTEND_URL = <FRONTEND_URL>
+   JWT_SECRET_KEY = <Your SECRET KEY>
+   JWT_EXPIRES = <Days after which JWT expires>d
+   COOKIE_EXPIRES = <Days after which Cookie Expires>
+   ```
 
    Example of .env file:-
-
+   ```
    PORT = 4001
-
    MONGODB_URI = mongodb+srv://<username>:<password>@<cluster_name>.mongodb.net
-
    FRONTEND_URL = ``
-
    JWT_SECRET_KEY = jwtSECRETkey
-
    JWT_EXPIRES = 7d
-
    COOKIE_EXPIRES = 7
+   ```
 
    Replace `<YOUR FREE PORT>` , `<Your MongoDB URI Connection String>` and ``<Your SECRET KEY>` with any free port on your system, your actual MongoDB connection string and JWT secret key, respectively.
 
@@ -73,7 +66,7 @@ Make sure you have the following installed on your machine:
 
 3. **Start the Backend server**
 
-   ```sh
+   ```
    npm run dev
    ```
 
