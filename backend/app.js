@@ -12,7 +12,7 @@ export const app = express();
 
 config();
 app.use(cors({
-    origin: [process.env.BACKEND_URL],
+    origin: [process.env.BACKEND_URL, process.env.FRONTEND_URL],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
 }));

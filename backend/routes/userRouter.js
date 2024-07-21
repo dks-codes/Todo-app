@@ -9,7 +9,7 @@ export const userRouter = express.Router();
  *     summary: User Signup
  *     description: Registers a new user with a name, email, phone number, and password. The email and phone number must be unique.
  *     tags: [User]
- *     security: []   
+ *     security: []
  *     requestBody:
  *       required: true
  *       content:
@@ -58,7 +58,7 @@ export const userRouter = express.Router();
  *                   type: string
  *                   description: JWT token for the authenticated user
  *       400:
- *         description: Bad request due to Existing user with same Email or Phone number
+ *         description: Bad request due to Existing user with same Email/Phone number or Missing Fields
  *         content:
  *           application/json:
  *             schema:
@@ -163,7 +163,6 @@ userRouter.post("/signup", signup);
  *                   example: Internal Server Error!!
  */
 userRouter.post("/login", login);
-
 
 /**
  * @swagger
