@@ -40,19 +40,29 @@ Make sure you have the following installed on your machine:
    Create a .env file in the backend directory with the required environment variables:-
 
    PORT = `<YOUR FREE PORT>`
+
    MONGODB_URI = `<Your MongoDB URI Connection String>`
+
    FRONTEND_URL = `<FRONTEND_URL>`
+
    JWT_SECRET_KEY = `<Your SECRET KEY>`
+
    JWT_EXPIRES = `<Days after which JWT expires>`d
+
    COOKIE_EXPIRES = `<Days after which Cookie Expires>`
 
    Example of .env file:-
 
    PORT = 4001
+
    MONGODB_URI = mongodb+srv://<username>:<password>@<cluster_name>.mongodb.net
+
    FRONTEND_URL = ``
+
    JWT_SECRET_KEY = jwtSECRETkey
+
    JWT_EXPIRES = 7d
+
    COOKIE_EXPIRES = 7
 
    Replace `<YOUR FREE PORT>` , `<Your MongoDB URI Connection String>` and ``<Your SECRET KEY>` with any free port on your system, your actual MongoDB connection string and JWT secret key, respectively.
@@ -68,15 +78,14 @@ Make sure you have the following installed on your machine:
    ```
 
    The server is running at: `http://localhost:<YOUR FREE PORT>` ( Eg: [http://localhost4001](http://localhost4001) )
-   
 
-### API Documentation
+## API Documentation
 
     API documentation is available at [https://documenter.getpostman.com/view/29222665/2sA3kUHhVq](https://documenter.getpostman.com/view/29222665/2sA3kUHhVq)
 
-    Alternatively, you can also see the documentation at: http://localhost:`<YOUR FREE PORT>`/api-docs ( Eg: [http://localhost:4001/api-docs](http://localhost:4001/api-docs) )
+    Alternatively, you can also see the documentation at: http://localhost:`<YOUR FREE PORT>`/api-docs ( Eg: [http://localhost:4001/api-docs/](http://localhost:4001/api-docs/) )
 
-### Contributing
+## Contributing
 
     You are welcomed to contribute to the Todo App API! To contribute, follow these steps:
 
