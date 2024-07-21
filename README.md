@@ -66,11 +66,7 @@ Make sure you have the following installed on your machine:
 
     The server is running at: `http://localhost:<YOUR FREE PORT>` ( Eg: [http://localhost4001](http://localhost4001) )
 
-<<<<<<< HEAD
-## API Documentation
-=======
 ### API Documentation
->>>>>>> 7a1175e9a496345cb95105e72bbe18828f4fb2e8
 
     API documentation is available at [https://documenter.getpostman.com/view/29222665/2sA3kUHhVq](https://documenter.getpostman.com/view/29222665/2sA3kUHhVq)
 
