@@ -12,3 +12,9 @@
 
 }
 
+
+{
+    "title" : "Docker",
+    "description" : "Set up Docker",
+    "priority" : "Medium"
+}
