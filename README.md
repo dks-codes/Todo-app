@@ -70,24 +70,25 @@ Make sure you have the following installed on your machine:
    npm run dev
    ```
 
-   The server is running at: `http://localhost:<YOUR FREE PORT>` ( Eg: [http://localhost4001](http://localhost4001) )
+   The server is running at: `http://localhost:<YOUR FREE PORT>` ( Eg: [http://localhost:4001](http://localhost:4001) )
 
 ## API Documentation
 
-    API documentation is available at [https://documenter.getpostman.com/view/29222665/2sA3kUHhVq](https://documenter.getpostman.com/view/29222665/2sA3kUHhVq)
+API documentation is available at  [Todo-app Documentation](https://documenter.getpostman.com/view/29222665/2sA3kUHhVq)
 
-    Alternatively, you can also see the documentation at: http://localhost:`<YOUR FREE PORT>`/api-docs ( Eg: [http://localhost:4001/api-docs/](http://localhost:4001/api-docs/) )
+Alternatively, you can also see the documentation at: http://localhost:`<YOUR FREE PORT>`/api-docs ( Eg: [http://localhost:4001/api-docs/](http://localhost:4001/api-docs/) )
 
 ## Contributing
 
-    You are welcomed to contribute to the Todo App API! To contribute, follow these steps:
+You are welcomed to contribute to the Todo App API! To contribute, follow these steps:
 
-    1. Fork the repository.
-    2. Create a new branch for your feature or fix.
-    3. Make your changes and commit them with meaningful messages.
-    4. Push your changes to your forked repository.
-    5. Open a pull request with a description of your changes.
+1. Fork the repository.
+2. Create a new branch for your feature or fix.
+3. Make your changes and commit them with meaningful messages.
+4. Push your changes to your forked repository.
+5. Open a pull request with a description of your changes.
+
 
 ## Contact
 
-    For any questions or issues, please contact us via the GitHub Issues page or at [deepakkumarsahoo2002@gmail.com](deepakkumarsahoo2002@gmail.com).
+For any questions or issues, please contact us via the GitHub Issues page or at [deepakkumarsahoo2002@gmail.com](mailto:deepakkumarsahoo2002@gmail.com).
