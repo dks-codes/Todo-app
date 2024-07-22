@@ -39,7 +39,7 @@ Make sure you have the following installed on your machine:
 
    Create a .env file in the backend directory with the required environment variables:-
 
-    ```
+   ```
    PORT = <YOUR FREE PORT>
    MONGODB_URI = <Your MongoDB URI Connection String>
    FRONTEND_URL = <FRONTEND_URL>
@@ -49,6 +49,7 @@ Make sure you have the following installed on your machine:
    ```
 
    Example of .env file:-
+
    ```
    PORT = 4001
    MONGODB_URI = mongodb+srv://<username>:<password>@<cluster_name>.mongodb.net
@@ -58,7 +59,7 @@ Make sure you have the following installed on your machine:
    COOKIE_EXPIRES = 7
    ```
 
-   Replace `<YOUR FREE PORT>` , `<Your MongoDB URI Connection String>` and ``<Your SECRET KEY>` with any free port on your system, your actual MongoDB connection string and JWT secret key, respectively.
+   Replace `<YOUR FREE PORT>` , `<Your MongoDB URI Connection String>` and `<Your SECRET KEY>` with any free port on your system, your actual MongoDB connection string and JWT secret key, respectively.
 
    Also, you can provide your own JWT token expiration days and Cookie expiration days by replacing `<Days after which JWT expires>` and `<Days after which Cookie Expires>` respectively.
 
@@ -74,9 +75,9 @@ Make sure you have the following installed on your machine:
 
 ## API Documentation
 
-API documentation is available at  [Todo-app Documentation](https://documenter.getpostman.com/view/29222665/2sA3kUHhVq)
+API documentation is available at [Todo-app Documentation](https://documenter.getpostman.com/view/29222665/2sA3kUHhVq)
 
-Alternatively, you can also see the documentation at: http://localhost:`<YOUR FREE PORT>`/api-docs ( Eg: [http://localhost:4001/api-docs/](http://localhost:4001/api-docs/) )
+Alternatively, you can also see the documentation at: `http://localhost:<YOUR FREE PORT>/api-docs` ( Eg: [http://localhost:4001/api-docs/](http://localhost:4001/api-docs/) )
 
 ## Contributing
 
@@ -87,7 +88,6 @@ You are welcomed to contribute to the Todo App API! To contribute, follow these 
 3. Make your changes and commit them with meaningful messages.
 4. Push your changes to your forked repository.
 5. Open a pull request with a description of your changes.
-
 
 ## Contact
 
